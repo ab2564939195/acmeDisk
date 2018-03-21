@@ -1,9 +1,10 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>一号店</title>
+<title>趣购商城</title>
 <link href="/statics/css/main.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]> 
 <link href="/statics/css/main.ie6.css" rel="stylesheet" type="text/css" />
@@ -153,7 +154,7 @@ function mcancelclosetime()
 		</div><!--s_tbar end-->
 		
 		<div class="s_hd nav">
-			<div id="s_logo"><a href="#"><img src="images/logo.jpg" border="0" /></a></div>
+			<div id="s_logo"><a href="#"><img src="/statics/images/logo.jpg" border="0" /></a></div>
 			<div id="s_nav">
 				<ul>
 					<li class="first cur"><a href="#">首页</a><span></span></li>
@@ -167,6 +168,7 @@ function mcancelclosetime()
 		<div class="mmenu">
 			<div class="s_hd">
 				<div id="s_search">
+
 					<form id="searchForm" action="" method="get"><input name="searchInfo" type="text" class="search-input" /><input  id="dosearchbutton" name="" type="image" src="images/btn_search.jpg" /></form>
 				</div>
 				
@@ -810,7 +812,7 @@ function mcancelclosetime()
 					<li><a href="#">纸杯</a></li>
 					<li><a href="#">塑杯</a></li>
 					</ul></dd></dl><dl class="cf"><dt><a href="#">进入该频道</a></dt>
-					<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">洁云</a></li><li><a href="#">乐扣乐扣</a></li><li><a href="#">金纺</a></li><li><a href="#">ASD 爱仕达</a></li><li><a href="#">蓝月亮</a></li><li><a href="#">滴露</a></li><li><a href="#">可爱可</a></li><li><a href="#">SIMELO</a></li><li><a href="#">清风</a></li><li><a href="#">Supor 苏泊尔</a></li><li><a href="#">妙洁</a></li><li><a href="#">奥妙</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">白猫满38元送漂水</a></li><li><a href="#">厨房清洁全攻略</a></li><li><a href="#">洁云赠品大放送</a></li><li><a href="#">一次性用品抄底价</a></li></dd></dl> </div> </div></li>
+						<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">洁云</a></li><li><a href="#">乐扣乐扣</a></li><li><a href="#">金纺</a></li><li><a href="#">ASD 爱仕达</a></li><li><a href="#">蓝月亮</a></li><li><a href="#">滴露</a></li><li><a href="#">可爱可</a></li><li><a href="#">SIMELO</a></li><li><a href="#">清风</a></li><li><a href="#">Supor 苏泊尔</a></li><li><a href="#">妙洁</a></li><li><a href="#">奥妙</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">白猫满38元送漂水</a></li><li><a href="#">厨房清洁全攻略</a></li><li><a href="#">洁云赠品大放送</a></li><li><a href="#">一次性用品抄底价</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">手机通讯、数码电器</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">手机通讯 </a></dt>
 					<dd><ul><li class="first"><a href="#">选号入网</a></li>
@@ -860,7 +862,7 @@ function mcancelclosetime()
 					<dd><ul><li class="first"><a href="#">GPS导航仪</a></li>
 					<li><a href="#">其它汽车用品</a></li>
 					<li><a href="#">车载用品</a></li>
-					</ul></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">诺基亚</a></li><li><a href="#">佳能</a></li><li><a href="#">三星</a></li><li><a href="#">尼康</a></li><li><a href="#">HTC</a></li><li><a href="#">索尼</a></li><li><a href="#">Apple 苹果</a></li><li><a href="#">硕美科</a></li><li><a href="#">漫步者</a></li><li><a href="#">卡西欧</a></li><li><a href="#">铁三角</a></li><li><a href="#">爱国者</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">三星、摩托罗拉手机专</a></li><li><a href="#">“清仓价”电纸书大放</a></li><li><a href="#">单反镜头随心配，搭出</a></li><li><a href="#">数码相机，跳楼价清仓</a></li></dd></dl> </div> </div></li>
+					</ul></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">诺基亚</a></li><li><a href="#">佳能</a></li><li><a href="#">三星</a></li><li><a href="#">尼康</a></li><li><a href="#">HTC</a></li><li><a href="#">索尼</a></li><li><a href="#">Apple 苹果</a></li><li><a href="#">硕美科</a></li><li><a href="#">漫步者</a></li><li><a href="#">卡西欧</a></li><li><a href="#">铁三角</a></li><li><a href="#">爱国者</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">三星、摩托罗拉手机专</a></li><li><a href="#">“清仓价”电纸书大放</a></li><li><a href="#">单反镜头随心配，搭出</a></li><li><a href="#">数码相机，跳楼价清仓</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">大家电、生活电器</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">大家电 </a></dt>
 					<dd><ul><li class="first"><a href="#">平板电视 </a></li>
@@ -918,7 +920,7 @@ function mcancelclosetime()
 					<li><a href="#">线材/线缆 </a></li>
 					<li><a href="#">万能遥控器</a></li>
 					<li><a href="#">墙面开关</a></li>
-					</ul></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">飞利浦</a></li><li><a href="#">松下</a></li><li><a href="#">索尼</a></li><li><a href="#">夏普</a></li><li><a href="#">创维</a></li><li><a href="#">海尔</a></li><li><a href="#">海信</a></li><li><a href="#">TCL</a></li><li><a href="#">Midea美的</a></li><li><a href="#">Supor 苏泊尔</a></li><li><a href="#">格兰仕</a></li><li><a href="#">博朗</a></li><li><a href="#">九阳</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">三大合资空调疯狂抢购</a></li><li><a href="#">冰洗直降，步步惊喜！</a></li><li><a href="#">液晶电视清仓大放价，</a></li><li><a href="#">小家电惠战十月，最低</a></li></dd></dl> </div> </div></li>
+					</ul></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">飞利浦</a></li><li><a href="#">松下</a></li><li><a href="#">索尼</a></li><li><a href="#">夏普</a></li><li><a href="#">创维</a></li><li><a href="#">海尔</a></li><li><a href="#">海信</a></li><li><a href="#">TCL</a></li><li><a href="#">Midea美的</a></li><li><a href="#">Supor 苏泊尔</a></li><li><a href="#">格兰仕</a></li><li><a href="#">博朗</a></li><li><a href="#">九阳</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">三大合资空调疯狂抢购</a></li><li><a href="#">冰洗直降，步步惊喜！</a></li><li><a href="#">液晶电视清仓大放价，</a></li><li><a href="#">小家电惠战十月，最低</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">电脑,软件,办公用品</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">电脑整机</a></dt>
 					<dd><ul><li class="first"><a href="#">笔记本电脑</a></li>
@@ -1013,7 +1015,7 @@ function mcancelclosetime()
 					<li><a href="#">荧光笔 </a></li>
 					<li><a href="#">油漆笔 </a></li>
 					</ul></dd></dl><dl class="cf"><dt><a href="#">进入该频道</a></dt>
-					<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">苹果</a></li><li><a href="#">索尼</a></li><li><a href="#">SAMSUNG 三星</a></li><li><a href="#">联想</a></li><li><a href="#">ThinkPad</a></li><li><a href="#">华硕</a></li><li><a href="#">纽曼</a></li><li><a href="#">金士顿</a></li><li><a href="#">得力</a></li><li><a href="#">易达</a></li><li><a href="#">惠普</a></li><li><a href="#">智高</a></li></dd></dl> </div> </div></li>
+						<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">苹果</a></li><li><a href="#">索尼</a></li><li><a href="#">SAMSUNG 三星</a></li><li><a href="#">联想</a></li><li><a href="#">ThinkPad</a></li><li><a href="#">华硕</a></li><li><a href="#">纽曼</a></li><li><a href="#">金士顿</a></li><li><a href="#">得力</a></li><li><a href="#">易达</a></li><li><a href="#">惠普</a></li><li><a href="#">智高</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">家居汽饰、箱包运动</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">床上用品</a></dt>
 					<dd><ul><li class="first"><a href="#">床品套件</a></li>
@@ -1090,7 +1092,7 @@ function mcancelclosetime()
 					<li><a href="#">组合家具</a></li>
 					<li><a href="#">好事达生活馆</a></li>
 					</ul></dd></dl><dl class="cf"><dt><a href="#">进入该频道</a></dt>
-					<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">小绵羊</a></li><li><a href="#">天堂伞</a></li><li><a href="#">空间大师</a></li><li><a href="#">大豪赛鲸</a></li><li><a href="#">外交官</a></li><li><a href="#">格雷特</a></li><li><a href="#">七匹狼</a></li><li><a href="#">瑞士军刀威戈Wenger</a></li><li><a href="#">红海棠</a></li><li><a href="#">洁丽雅</a></li><li><a href="#">华润家纺</a></li><li><a href="#">御灵珠宝</a></li><li><a href="#">安美驰</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">床品套件99元起</a></li><li><a href="#">华润家纺买赠特促</a></li><li><a href="#">御灵珠宝登入1号店</a></li><li><a href="#">婚庆开始了</a></li></dd></dl> </div> </div></li>
+						<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">小绵羊</a></li><li><a href="#">天堂伞</a></li><li><a href="#">空间大师</a></li><li><a href="#">大豪赛鲸</a></li><li><a href="#">外交官</a></li><li><a href="#">格雷特</a></li><li><a href="#">七匹狼</a></li><li><a href="#">瑞士军刀威戈Wenger</a></li><li><a href="#">红海棠</a></li><li><a href="#">洁丽雅</a></li><li><a href="#">华润家纺</a></li><li><a href="#">御灵珠宝</a></li><li><a href="#">安美驰</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">床品套件99元起</a></li><li><a href="#">华润家纺买赠特促</a></li><li><a href="#">御灵珠宝登入1号店</a></li><li><a href="#">婚庆开始了</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">玩具、图书音像</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">毛绒玩具</a></dt>
 					<dd><ul><li class="first"><a href="#">毛绒玩偶</a></li>
@@ -1158,7 +1160,7 @@ function mcancelclosetime()
 					<li><a href="#">语音智能娃娃</a></li>
 					<li><a href="#">小菠莉</a></li>
 					</ul></dd></dl><dl class="cf"><dt><a href="#">进入该频道</a></dt>
-					<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">皇室</a></li><li><a href="#">费雪</a></li><li><a href="#">乐高</a></li><li><a href="#">芭比</a></li><li><a href="#">孩之宝</a></li><li><a href="#">伊诗比蒂</a></li><li><a href="#">LALABABY</a></li><li><a href="#">蒲蒲兰绘本馆</a></li><li><a href="#">洪恩</a></li><li><a href="#">小企鹅</a></li><li><a href="#">乐乐趣</a></li><li><a href="#">毛毛仔</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">300款玩具1折起售</a></li><li><a href="#">三大品牌遥控玩具特卖</a></li><li><a href="#">乐高超低价</a></li><li><a href="#">费雪 乐高 皇室联合让</a></li></dd></dl> </div> </div></li>
+							<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">皇室</a></li><li><a href="#">费雪</a></li><li><a href="#">乐高</a></li><li><a href="#">芭比</a></li><li><a href="#">孩之宝</a></li><li><a href="#">伊诗比蒂</a></li><li><a href="#">LALABABY</a></li><li><a href="#">蒲蒲兰绘本馆</a></li><li><a href="#">洪恩</a></li><li><a href="#">小企鹅</a></li><li><a href="#">乐乐趣</a></li><li><a href="#">毛毛仔</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">300款玩具1折起售</a></li><li><a href="#">三大品牌遥控玩具特卖</a></li><li><a href="#">乐高超低价</a></li><li><a href="#">费雪 乐高 皇室联合让</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">服装鞋帽</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">女装.</a></dt>
 					<dd><ul><li class="first"><a href="#">女装T恤</a></li>
@@ -1196,7 +1198,7 @@ function mcancelclosetime()
 					<li><a href="#">儿童配件</a></li>
 					<li><a href="#">男式配件</a></li>
 					<li><a href="#">运动配件</a></li>
-					</ul></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">李宁</a></li><li><a href="#">佐丹奴</a></li><li><a href="#">nike 360</a></li><li><a href="#">CARTELO卡帝乐</a></li><li><a href="#">乐途</a></li><li><a href="#">唐狮</a></li><li><a href="#">PARGO佩戈</a></li><li><a href="#">OLOMO欧莱诺</a></li><li><a href="#">保罗威特</a></li><li><a href="#">Tomnrabbit</a></li><li><a href="#">JAMESKING</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">李宁疯狂满送第二波</a></li><li><a href="#">卡帝乐清仓 2折起</a></li><li><a href="#">牛仔裤热卖 69元起</a></li><li><a href="#">佐丹奴旗舰店</a></li></dd></dl> </div> </div></li>
+					</ul></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">李宁</a></li><li><a href="#">佐丹奴</a></li><li><a href="#">nike 360</a></li><li><a href="#">CARTELO卡帝乐</a></li><li><a href="#">乐途</a></li><li><a href="#">唐狮</a></li><li><a href="#">PARGO佩戈</a></li><li><a href="#">OLOMO欧莱诺</a></li><li><a href="#">保罗威特</a></li><li><a href="#">Tomnrabbit</a></li><li><a href="#">JAMESKING</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">李宁疯狂满送第二波</a></li><li><a href="#">卡帝乐清仓 2折起</a></li><li><a href="#">牛仔裤热卖 69元起</a></li><li><a href="#">佐丹奴旗舰店</a></li></ul></dd></dl> </div> </div></li>
 					<li class="cat_item"><h4 class="cat_tit"><a href="#" class="cat_tit_link">营养保健、健康器械</a><span class="s_arrow">></span></h4><div class="cat_cont"><div class="cat_cont_lft">
 					<dl class="cf"><dt><a href="#">增强免疫/ 抗疲劳</a></dt>
 					<dd><ul><li class="first"><a href="#">氨基酸</a></li>
@@ -1266,7 +1268,7 @@ function mcancelclosetime()
 					<li><a href="#">血压计Y</a></li>
 					<li><a href="#">制氧器材Y</a></li>
 					</ul></dd></dl><dl class="cf"><dt><a href="#">进入该频道</a></dt>
-					<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">绿A</a></li><li><a href="#">喜瑞</a></li><li><a href="#">白兰氏</a></li><li><a href="#">养生堂</a></li><li><a href="#">奈氏力斯</a></li><li><a href="#">善存</a></li><li><a href="#">碧生源</a></li><li><a href="#">欧姆龙</a></li><li><a href="#">昂立</a></li><li><a href="#">恒寿堂</a></li><li><a href="#">lumi</a></li><li><a href="#">膳通</a></li><li><a href="#">修身堂</a></li></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">保健品0利润抢购第二</a></li><li><a href="#">保健品滋补人气排行</a></li><li><a href="#">情趣用品系列</a></li><li><a href="#">雅姿饼干买3送1</a></li></dd></dl> </div> </div></li>
+						<dd></dd></dl></div><div class="cat_cont_rgt"><dl><dt>推荐品牌</dt><dd><ul><li><a href="#">绿A</a></li><li><a href="#">喜瑞</a></li><li><a href="#">白兰氏</a></li><li><a href="#">养生堂</a></li><li><a href="#">奈氏力斯</a></li><li><a href="#">善存</a></li><li><a href="#">碧生源</a></li><li><a href="#">欧姆龙</a></li><li><a href="#">昂立</a></li><li><a href="#">恒寿堂</a></li><li><a href="#">lumi</a></li><li><a href="#">膳通</a></li><li><a href="#">修身堂</a></li></ul></dd></dl><dl><dt>促销专题</dt><dd><ul><li><a href="#">保健品0利润抢购第二</a></li><li><a href="#">保健品滋补人气排行</a></li><li><a href="#">情趣用品系列</a></li><li><a href="#">雅姿饼干买3送1</a></li></ul></dd></dl> </div> </div></li>
 					</ul>
 					<!--<div class="all_cats"><a href="#" class="more">全部商品分类</a></div>-->
 					</div>
@@ -1286,11 +1288,10 @@ function mcancelclosetime()
 					<div class="i_col_rgt_box">
 					
 						<div class="i_slides" id="slideshow">
-							<div class="i"><a href="#"><img src="/statics/images/slide-1.jpg" /></a></div>
-							<div class="i"><a href="#"><img src="/statics/images/slide-2.jpg" /></a></div>
-							<div class="i"><a href="#"><img src="/statics/images/slide-3.jpg" /></a></div>
-							<div class="i"><a href="#"><img src="/statics/images/slide-4.jpg" /></a></div>
-							<div class="i"><a href="#"><img src="/statics/images/slide-5.jpg" /></a></div>
+							<c:forEach items="${pageInfo}" var="news">
+							<div class="i"><a href="#"><img src="${news.commoditypicture.pictureShow}" /></a></div>
+
+							</c:forEach>
 						</div>
 						
 						<div class="pbt10"></div>
@@ -1300,14 +1301,9 @@ function mcancelclosetime()
 								<div class="lft_icon"><a href="#"><span>pre</span></a></div>
 								<div class="hot_list">
 									<ul>
-										<li><a href="#"><img src="/statics/images/f1.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f2.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f3.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f4.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f5.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f6.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f7.jpg" /></a></li>
-										<li><a href="#"><img src="/statics/images/f8.jpg" /></a></li>
+										<c:forEach items="${picture}" var="picture">
+										<li><a href="#"><img src=${picture.pictureShow} /></a></li>
+										</c:forEach>
 									</ul>
 								</div>
 								<div class="rgt_icon"><a href="#"><span>Nexr</span></a></div>
@@ -1324,16 +1320,7 @@ function mcancelclosetime()
 										</ul>
 									</div>
 									
-									<div class="announce_top cf"><h3>关注一号店<span><a href="#">更多</a></span></h3></div>
-								
-									<div class="announce_cont">
-										<ul>
-											<li><a href="#">一号店迎国庆促销活动28号开始</a></li>
-											<li><a href="#">迎中秋，上品轩专卖店开业</a></li>
-											<li><a href="#">贺一号店全南店盛大开业</a></li>
-											<li><a href="#">凡注册为一号店网上商城的会员</a></li>
-										</ul>
-									</div>
+									<%@include file="util/textNews.jsp"%>
 								</div>
 							</div>
 						</div>
@@ -1391,14 +1378,14 @@ function mcancelclosetime()
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg1-3.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">TCL滚筒洗衣机 XQG60-601AS</a></div>
-														<div class="sprice">特价：<span>¥1598<span></div>
+														<div class="sprice">特价：<span>¥1598</span></div>
 													</div>
 												</li>
 												<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg1-4.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">云南蒙自纸皮薄皮石榴 皮薄果肉细嫰</a></div>
-														<div class="sprice">特价：<span>¥65<span></div>
+														<div class="sprice">特价：<span>¥65</span></div>
 													</div>
 												</li>--%>
 											</ul>
@@ -1427,14 +1414,14 @@ function mcancelclosetime()
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg2-3.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">贝亲 滋润型润肤霜35g</a></div>
-														<div class="sprice">特价：<span>¥18.9<span></div>
+														<div class="sprice">特价：<span>¥18.9</span></div>
 													</div>
 												</li>
 												<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg2-4.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">好奇干爽舒适纸尿裤S小号 14片/包 赠品变动</a></div>
-														<div class="sprice">特价：<span>¥12.8<span></div>
+														<div class="sprice">特价：<span>¥12.8</span></div>
 													</div>
 												</li>--%>
 											</ul>
@@ -1463,14 +1450,14 @@ function mcancelclosetime()
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg3-3.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">5830升级版跌破2000，还不来抢！</a></div>
-														<div class="sprice">特价：<span>¥1998<span></div>
+														<div class="sprice">特价：<span>¥1998</span></div>
 													</div>
 												</li>
 												<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg3-4.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">智多熊 早教益智玩具v15</a></div>
-														<div class="sprice">特价：<span>¥99<span></div>
+														<div class="sprice">特价：<span>¥99</span></div>
 													</div>
 												</li>--%>
 											</ul>
@@ -1499,14 +1486,14 @@ function mcancelclosetime()
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg4-3.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">闽龙达 嫩香菇200g</a></div>
-														<div class="sprice">特价：<span>¥56.5<span></div>
+														<div class="sprice">特价：<span>¥56.5</span></div>
 													</div>
 												</li>
 												<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg4-4.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">鲜得味天然泉水金枪鱼180g/罐（泰国）</a></div>
-														<div class="sprice">特价：<span>¥14.5<span></div>
+														<div class="sprice">特价：<span>¥14.5</span></div>
 													</div>
 												</li>--%>
 											</ul>

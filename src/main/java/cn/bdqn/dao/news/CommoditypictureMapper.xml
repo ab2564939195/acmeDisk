@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.dao.news.CommoditypictureMapper">
+    <resultMap id="pMap" type="Commoditypicture">
+        <id property="pictureID" column="pictureid"/>
+    </resultMap>
+    <select id="queryPictureByParentid" resultMap="pMap" parameterType="int">
+          SELECT `commoditypicture`.`pictureShow` FROM `commoditypicture` WHERE `parentID`=#{parentid}
+</select>
+
+
+</mapper>
