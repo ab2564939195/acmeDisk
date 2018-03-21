@@ -1,5 +1,7 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %><html xmlns="http://www.w3.org/1999/xhtml">
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>趣购商城</title>
@@ -20,6 +22,20 @@ var closetimer	= 0;
 var ddmenuitem	= 0;
 
 $(document).ready(function(){
+
+    $("#dosearchbutton").click(function () {
+		$("#searchForm").attr('action',"<%=request.getContextPath()%>/search/doSearch");
+        $("#searchForm").submit();
+    /*$("#queryAll").click(function () {
+
+            alert("dadf");
+	})*/
+	$("#toCommodityDetail").click(function () {
+
+    })
+
+
+
    	$('.cat_item').mousemove(function(){
 		$(this).addClass('cat_item_on');
 	});
@@ -152,7 +168,8 @@ function mcancelclosetime()
 		<div class="mmenu">
 			<div class="s_hd">
 				<div id="s_search">
-					<form action="" method="post"><input name="" type="text" class="search-input" /><input name="" type="image" src="/statics/images/btn_search.jpg" /></form>
+
+					<form id="searchForm" action="" method="get"><input name="searchInfo" type="text" class="search-input" /><input  id="dosearchbutton" name="" type="image" src="images/btn_search.jpg" /></form>
 				</div>
 				
 				<div id="s_keyword">
@@ -1339,14 +1356,18 @@ function mcancelclosetime()
 									<dd>
 										<div class="cat_list_box slide_cont">
 											<ul>
+												<c:forEach items="${HotBuyList}" var="vo">
 												<li>
-													<div class="cat_pd">
-														<div class="pic"><a href="#"><img src="/statics/images/qg1-1.jpg" border="0" /></a></div>
-														<div class="ptitle"><a href="#">伊宝爬行垫大号 伊宝动物乐园便携爬行</a></div>
-														<div class="sprice">特价：<span>¥69</span></div>
+													<div class="cat_pd"   >
+
+														<div class="pic"  no="${vo.commodityID}"><a href="#"><img src=${vo.pictureShow} border="0" /></a></div>
+														<div class="ptitle"no="${vo.commodityID}" ><a href="#" >${vo.commodityName}</a></div>
+														<div class="sprice"no="${vo.commodityID}">特价：<span >${vo.priceShow}</span></div>
+														<%--<button id="queryCommodityName" type="submit" class="ptitle" no="${vo.commodityID}">${vo.commdityName}</button>--%>
 													</div>
 												</li>
-												<li>
+												</c:forEach>
+												<%--<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg1-2.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">清风纤巧装2层100抽面纸*5包</a></div>
@@ -1366,21 +1387,23 @@ function mcancelclosetime()
 														<div class="ptitle"><a href="#">云南蒙自纸皮薄皮石榴 皮薄果肉细嫰</a></div>
 														<div class="sprice">特价：<span>¥65</span></div>
 													</div>
-												</li>
+												</li>--%>
 											</ul>
 										</div>
 									</dd>
 									<dd>
 										<div class="cat_list_box slide_cont">
 											<ul>
+												<c:forEach items="${queryPinPai}" var="PinPai" >
 												<li>
 													<div class="cat_pd">
-														<div class="pic"><a href="#"><img src="/statics/images/qg2-1.jpg" border="0" /></a></div>
-														<div class="ptitle"><a href="#">乐扣乐扣 树叶百纳箱（55L）LLB51</a></div>
-														<div class="sprice">特价：<span>¥59</span></div>
+														<div class="pic"><a href="#"><img src=${PinPai.pictureShow} border="0" /></a></div>
+														<div class="ptitle"><a href="#">${PinPai.commodityName}</a></div>
+														<div class="sprice">特价：<span>¥${PinPai.priceShow}</span></div>
 													</div>
 												</li>
-												<li>
+												</c:forEach>
+												<%--<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg2-2.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">昂立多邦礼罐特惠组合特价125元（8包）</a></div>
@@ -1400,21 +1423,23 @@ function mcancelclosetime()
 														<div class="ptitle"><a href="#">好奇干爽舒适纸尿裤S小号 14片/包 赠品变动</a></div>
 														<div class="sprice">特价：<span>¥12.8</span></div>
 													</div>
-												</li>
+												</li>--%>
 											</ul>
 										</div>
 									</dd>
 									<dd>
 										<div class="cat_list_box slide_cont">
 											<ul>
+												<c:forEach items="${queryHotTop}" var="HotTop">
 												<li>
 													<div class="cat_pd">
-														<div class="pic"><a href="#"><img src="/statics/images/qg3-1.jpg" border="0" /></a></div>
-														<div class="ptitle"><a href="#">休闲饼干DIY 10.8元选3件</a></div>
-														<div class="sprice">特价：<span>¥3.6</span></div>
+														<div class="pic"><a href="#"><img src=${HotTop.priceShow} border="0" /></a></div>
+														<div class="ptitle"><a href="#">${HotTop.commodityName}</a></div>
+														<div class="sprice">特价：<span>¥${HotTop.priceShow}</span></div>
 													</div>
 												</li>
-												<li>
+												</c:forEach>
+												<%--<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg3-2.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">L'OREAL欧莱雅清润全日保湿水精华凝露 </a></div>
@@ -1434,21 +1459,23 @@ function mcancelclosetime()
 														<div class="ptitle"><a href="#">智多熊 早教益智玩具v15</a></div>
 														<div class="sprice">特价：<span>¥99</span></div>
 													</div>
-												</li>
+												</li>--%>
 											</ul>
 										</div>
 									</dd>
 									<dd>
 										<div class="cat_list_box slide_cont">
 											<ul>
+												<c:forEach items="${queryNewTop}" var="NewTop">
 												<li>
 													<div class="cat_pd">
-														<div class="pic"><a href="#"><img src="/statics/images/qg4-1.jpg" border="0" /></a></div>
-														<div class="ptitle"><a href="#">【满200减60】 Lansiwear 浪氏威尔</a></div>
-														<div class="sprice">特价：<span>¥189</span></div>
+														<div class="pic"><a href="#"><img src=${NewTop.pictureShow} border="0" /></a></div>
+														<div class="ptitle"><a href="#">${NewTop.commodityName}</a></div>
+														<div class="sprice">特价：<span>¥${NewTop.priceShow}</span></div>
 													</div>
 												</li>
-												<li>
+												</c:forEach>
+												<%--<li>
 													<div class="cat_pd">
 														<div class="pic"><a href="#"><img src="/statics/images/qg4-2.jpg" border="0" /></a></div>
 														<div class="ptitle"><a href="#">李宁全场3折起，满199送T恤</a></div>
@@ -1468,7 +1495,7 @@ function mcancelclosetime()
 														<div class="ptitle"><a href="#">鲜得味天然泉水金枪鱼180g/罐（泰国）</a></div>
 														<div class="sprice">特价：<span>¥14.5</span></div>
 													</div>
-												</li>
+												</li>--%>
 											</ul>
 										</div>
 									</dd>

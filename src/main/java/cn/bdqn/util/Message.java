@@ -34,4 +34,13 @@ public class Message {
     public void setCore(String core) {
         this.core = core;
     }
+
+    public static Message searchError(){
+        Message message=new Message();
+        message.setCore("0021");
+        message.setMsg("没有搜索到内容，正在为您展示热销商品");
+        return message;
+    }
+
+
 }

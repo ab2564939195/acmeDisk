@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.dao.SiGeHot.CommodityMapper">
+    <resultMap id="comMap" type="Commodity">
+
+        <id property="commodityID" column="commodityID"/>
+        
+    </resultMap>
+<!--<select id="querySiGeHotToQiangGou" resultMap="comMap">
+SELECT * FROM commodity  WHERE  ifTop = '是'
+</select>-->
+    <!--查看一条抢购信息-->
+    <select id="querySiGeHotToQiangGou" resultMap="comMap">
+        select * from commodity where labelID=10
+    </select>
+    <select id="queryPaiBylabelID" resultMap="comMap">
+        select * from commodity where labelID=9
+    </select>
+    <select id="queryHotTop" resultMap="comMap">
+        select * from commodity where labelID=8
+    </select>
+    <select id="queryNewTop" resultMap="comMap">
+        select * from commodity where labelID=7
+    </select>
+
+    <update id="updateLabelID" parameterType="cn.bdqn.entity.Commodity">
+        update commodity set labelID=#{labelID} where commodityID=#{commodityID}
+    </update>
+</mapper>
