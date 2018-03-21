@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+FieldTypeComment
+userid int(11) NOT NULL用户id
+userName  (50) NULL用户名
+userNick  (50) NULL用户昵称
+realName  (50) NULL真实姓名
+cordID  (50) NULL身份证
+password   varchar(50) NULL密码
+email    varchar(50) NULL邮箱
+phone   varchar(50) NULL手机号
+loginTime  date NULL登陆时间
+gender  varchar(50) NULL性别
+age    varchar(50) NULL年龄
+integral   int(11) NULL积分-->
+<mapper namespace="cn.bdqn.dao.user.UserMapper">
+    <resultMap id="userMap" type="TUser">
+        <id property="userId" column="userid"></id>
+        <result property="password" column="password"></result>
+        <result property="userName" column="userName"></result>
+        <result property="userNick" column="userNick"></result>
+        <result property="realName" column="realName"></result>
+        <result property="cordID" column="cordID"></result>
+        <result property="email" column="email"></result>
+        <result property="phone" column="phone"></result>
+        <result property="loginTime" column="loginTime"></result>
+        <result property="gender" column="gender"></result>
+        <result property="age" column="age"></result>
+        <result property="integral" column="integral"></result>
+    </resultMap>
+
+    <select id="login" resultMap="userMap" parameterType="TUser">
+        SELECT tu.`userName` ,tu.`password` FROM tuser tu WHERE userName=#{userName} AND PASSWORD=#{password}
+    </select>
+</mapper>

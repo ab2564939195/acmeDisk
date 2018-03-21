@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.dao.user.RegisterMapper">
+    <resultMap id="userMap" type="TUser">
+        <id property="userId" column="userid"></id>
+        <result property="password" column="password"></result>
+        <result property="userName" column="userName"></result>
+        <result property="userNick" column="userNick"></result>
+        <result property="realName" column="realName"></result>
+        <result property="cordID" column="cordID"></result>
+        <result property="email" column="email"></result>
+        <result property="phone" column="phone"></result>
+        <result property="loginTime" column="loginTime"></result>
+        <result property="gender" column="gender"></result>
+        <result property="age" column="age"></result>
+        <result property="integral" column="integral"></result>
+    </resultMap>
+
+    <insert id="doRegister" parameterType="TUser">
+        INSERT INTO tuser(userid,userName,userNick,realName,
+        cordID,PASSWORD,email,phone,
+        loginTime,gender,age,integral)
+        VALUES(NULL,#{userName},#{userNick},#{realName},
+        #{cordID},#{password},#{email},#{phone},
+        #{loginTime},#{gender},#{age},#{integral})
+    </insert>
+
+</mapper>
