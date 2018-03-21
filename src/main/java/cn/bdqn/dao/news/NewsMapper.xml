@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.dao.news.NewsMapper">
+    <resultMap id="cMap" type="Commoditypicture">
+        <id property="pictureID" column="pictureid"/>
+    </resultMap>
+    <resultMap id="newsMap" type="News">
+        <id property="newsId" column="newsid"/>
+        <result property="newsTatle" column="newstatle"/>
+        <association property="commoditypicture" javaType="Commoditypicture" resultMap="cMap"/>
+     </resultMap>
+    
+    <select id="queryNewsTatle" resultMap="newsMap">
+        SELECT * FROM news
+    </select>
+    <select id="queryNewsPicture" resultMap="newsMap">
+        SELECT * FROM `news`,`commoditypicture`
+        WHERE `news`.`pictureID`=`commoditypicture`.`pictureID`
+    </select>
+
+</mapper>

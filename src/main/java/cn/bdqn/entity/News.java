@@ -22,17 +22,17 @@ public class News {
     private Date newsTime;
     private Commoditypicture commoditypicture;
 
-    public News() {
-    }
-
-    public News(int newsId, int pictureID, String newsTatle, String newsContent, String newsAuthor, Date newsTime, Commoditypicture commoditypicture) {
-        this.newsId = newsId;
-        this.pictureID = pictureID;
-        this.newsTatle = newsTatle;
-        this.newsContent = newsContent;
-        this.newsAuthor = newsAuthor;
-        this.newsTime = newsTime;
-        this.commoditypicture = commoditypicture;
+    @Override
+    public String toString() {
+        return "News{" +
+                "newsId=" + newsId +
+                ", pictureID=" + pictureID +
+                ", newsTatle='" + newsTatle + '\'' +
+                ", newsContent='" + newsContent + '\'' +
+                ", newsAuthor='" + newsAuthor + '\'' +
+                ", newsTime=" + newsTime +
+                ", commoditypicture=" + commoditypicture +
+                '}';
     }
 
     public int getNewsId() {
@@ -91,16 +91,18 @@ public class News {
         this.commoditypicture = commoditypicture;
     }
 
-    @Override
-    public String toString() {
-        return "News{" +
-                "newsId=" + newsId +
-                ", pictureID=" + pictureID +
-                ", newsTatle='" + newsTatle + '\'' +
-                ", newsContent='" + newsContent + '\'' +
-                ", newsAuthor='" + newsAuthor + '\'' +
-                ", newsTime=" + newsTime +
-                ", commoditypicture=" + commoditypicture +
-                '}';
+    public News(int newsId, int pictureID, String newsTatle, String newsContent, String newsAuthor, Date newsTime, Commoditypicture commoditypicture) {
+
+        this.newsId = newsId;
+        this.pictureID = pictureID;
+        this.newsTatle = newsTatle;
+        this.newsContent = newsContent;
+        this.newsAuthor = newsAuthor;
+        this.newsTime = newsTime;
+        this.commoditypicture = commoditypicture;
+    }
+
+    public News() {
+
     }
 }

@@ -125,11 +125,11 @@
                         <artifactId>jstl</artifactId>
                         <version>1.2</version>
                     </dependency>
-        <dependency>
+       <!-- <dependency>
             <groupId>com.alipay</groupId>
             <artifactId>sdk-java</artifactId>
             <version>20180309170622</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
