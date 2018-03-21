@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bdqn.dao.Search.SearchInfoDao">
+    <resultMap id="commodity" type="cn.bdqn.entity.Commodity"></resultMap>
+    <resultMap id="commoditypicture" type="cn.bdqn.entity.Commoditypicture">
+
+    </resultMap>
+
+    <resultMap id="searchInfo" type="cn.bdqn.entity.searchPOJO.SearchInfo"></resultMap>
+
+
+    <select id="queryByName-----HaveUpdate" resultMap="searchInfo">
+        SELECT commoditypicture.`pictureShow`,commoditypicture.`pictureID`,commodity.`commodityID`,
+commodity.`priceShow`,commodity.`Search`,commodity.`commodityName`
+FROM commodity ,commoditypicture
+ WHERE commodity.`commodityID`=commoditypicture.`commodityID`
+ AND commodity.`Search` LIKE CONCAT('%',#{searchString},'%')
+    </select>
+
+    <select id="queryByName" resultMap="searchInfo">
+       SELECT commodity.`priceShow`,commodity.`commodityID`,
+commodity.`priceShow`,commodity.`Search`,commodity.`commodityName`,commodity.`labelId`,commoditycomment.`discussCount`
+FROM commodity,CommodityComment
+ WHERE  commodity.`Search` LIKE CONCAT('%',#{searchString},'%')
+ AND commoditycomment.`commodityID`=commodity.`commodityID`
+ ORDER BY commoditycomment.`discussCount` DESC
+    </select>
+
+
+
+</mapper>
