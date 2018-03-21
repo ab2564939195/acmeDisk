@@ -21,6 +21,10 @@ var closetimer	= 0;
 var ddmenuitem	= 0;
 
 $(document).ready(function(){
+
+    $("#dosearchbutton").click(function () {
+		$("#searchForm").attr('action',"<%=request.getContextPath()%>/search/doSearch");
+        $("#searchForm").submit();
     /*$("#queryAll").click(function () {
 
             alert("dadf");
@@ -163,7 +167,7 @@ function mcancelclosetime()
 		<div class="mmenu">
 			<div class="s_hd">
 				<div id="s_search">
-					<form action="" method="post"><input name="" type="text" class="search-input" /><input name="" type="image" src="images/btn_search.jpg" /></form>
+					<form id="searchForm" action="" method="get"><input name="searchInfo" type="text" class="search-input" /><input  id="dosearchbutton" name="" type="image" src="images/btn_search.jpg" /></form>
 				</div>
 				
 				<div id="s_keyword">
