@@ -125,11 +125,20 @@
                         <artifactId>jstl</artifactId>
                         <version>1.2</version>
                     </dependency>
-        <dependency>
-            <groupId>com.alipay</groupId>
-            <artifactId>sdk-java</artifactId>
-            <version>20180309170622</version>
-        </dependency>
+
+
+        <!--<dependency>-->
+
+            <!--<groupId>org.apache.solr</groupId>-->
+
+            <!--<artifactId>solr-solrj</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.alipay</groupId>-->
+            <!--<artifactId>sdk-java</artifactId>-->
+            <!--<version>20180309170622</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -142,8 +151,29 @@
                         <directory>src/main/java</directory>
                         <includes>
                             <include>**/*.xml</include>
+
                         </includes>
+
                     </resource>
+                    <!--<resource>-->
+                    <!--<directory>/src/main/resources</directory>-->
+                        <!--<includes>-->
+                            <!--<include>**/*.xml</include>-->
+                            <!--<include>*.properties</include>-->
+                        <!--</includes>-->
+
+                    <!--</resource>-->
+
+                    <resource>
+                        <directory>src/main/resources</directory>
+                        <includes>
+                            <include>*.xml</include>
+                            <include>*.properties</include>
+                        </includes>
+
+                    </resource>
+
+
                 </resources>
          </build>
 
